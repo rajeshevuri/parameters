@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'PERSON' 'GENDER', defaultValue: 'Mr Jenkins' 'Mr', description: 'Who should I say hello to?' 'select the gender')
+        string(name: 'PERSON' , defaultValue: 'Mr Jenkins' , description: 'Who should I say hello to?')
         booleanParam(name: 'DEBUG_BUILD', defaultValue: true, description: '')   
     stages {
         stage('Example') {
